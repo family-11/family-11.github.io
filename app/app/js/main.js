@@ -7,31 +7,6 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 900,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
       });
       window.onload = function () {
         document.body.classList.add('loaded_hiding');
@@ -47,12 +22,19 @@ $(function(){
         previous: 'Назад',
         next: 'Далее',
         position: 'bottom',
-        
         });
+
+
+
        $('.header__burger-burger').click(function(event){
             $('.header__burger-burger,.header__burger-hide').toggleClass('active');
+            $('body').toggleClass('lock');
        });
-        
-
-  
+       $('.nav__burger-burger').click(function(event){
+        $('.nav__inner,.nav__burger-burger').toggleClass('active');
+   });
+       $('.header__search').click(function(event){
+        $('.header__search-input').toggleClass('active');
+        });
+    
 });

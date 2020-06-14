@@ -84,10 +84,12 @@
     }
     &__text{
         margin-left: 0;
+        text-decoration: none;
     }
     &__title{
         font-size: 20px;
         line-height: 24px;
+
 
     }
     &__subtitle{
@@ -103,9 +105,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 5px;
+        &-inner{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+        }
     }
     &__search{
         margin-right: 30px;
+        &-input{
+            display: none;
+            margin: 0 auto; 
+        }
+    }
+    .header__search-input.active{
+        display: block;
     }
     &__photos-item{
         margin-right: 30px;
@@ -125,6 +140,8 @@
 }
 
 .slider{
+    max-width: 1920px;
+    margin: 0 auto; 
     &__container{
         background-image: url(../img/slider-bg.jpg);
         margin: 0 auto;
@@ -133,12 +150,13 @@
         background-repeat: no-repeat;
         background-position:top -94px  left 00px;
         background-size:auto;
-        height: 750px;
+        height: 675px;
+        box-shadow: 0 0.01px 12px #575555 inset;
 
     }
     .slider__item-2{
-        background-position: top -111px left -30px ;
-        background-size: 119%;
+        background-position: top -121px left -73px;
+        background-size: 120%;
     }
     .slider__item-3{
         .slider__uptite{
@@ -158,6 +176,8 @@
         }
     }
     .slider__item-4{
+        background-position: top -108px left -136px;
+        background-size: 117%;
         .slider__uptite{
             font-size: 20px;
             font-weight: bold;
@@ -211,15 +231,16 @@
     }
     .slick-dots{
         list-style: none;
-        outline: none;
-        margin-left: 371px;
-        margin-top: -187px; 
-         z-index: 5;
+        outline: none; 
+     z-index: 5;
         max-width: 1200px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         padding: 27px 0 67px;
+        position: absolute;
+        bottom: 0;
+        left: 370px;
 
         .slick-active{
             button{
@@ -369,6 +390,8 @@
 
     }
     &__btn{
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.12) 0%, rgba(245,245,245,0.01) 100%);
         text-decoration: none;
         cursor: pointer;
         margin-bottom: 200px;
@@ -408,7 +431,7 @@
         line-height: 60px;
         font-weight: bold;
         color: #3f3e3e;
-        border-bottom: 4px solid #fff;
+        border-bottom: 4px solid transparent;
         transition: all 0.2s;
         &:hover{
             border-bottom: 4px solid #d16a19;
@@ -434,6 +457,7 @@
         display: flex;
         align-items:center;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__inner{
         display: flex;
@@ -477,9 +501,15 @@
             font-weight: bold;
             color:#3f3e3e;
             transition: all 0.2s;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 100px;
         }
         &-text{
             margin-bottom: 20px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-height: 100px;
         }
         &-link{
             margin-bottom: 20px;
@@ -503,6 +533,7 @@
                 font-size: 20px;
                 line-height: 20px;
                 color:#676767;
+                font-family: lora;
             }
             &-mounth{
                 text-transform: uppercase;
@@ -510,6 +541,7 @@
                 font-size: 12px;
                 line-height: 20px;
                 color:#676767;
+                font-family: lora;
 
             }
         }
@@ -580,7 +612,7 @@ a{
         line-height: 60px;
         &-inner{
             flex: 0 0 40%;
-            z-index: 10;
+            z-index: 1;
         }
     }
     &__container{
@@ -651,19 +683,21 @@ a{
             padding: 10px 16px;
         }
         &-text{
-            max-width: 430px;
-            margin-left: 0;
-            font-size: 20px;
-            line-height: 40px;
-            margin-bottom: 3px;
-            padding: 0 20px;
-            &-p{
+            margin-bottom: 0;
+            list-style: none;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-height: 100px;
+        }
+        
+            &-text-p{
+                font-family: lora;
                 background-color: #0f8376;
                 color: #fff;
                 margin-bottom: 3px;
-                padding: 0 15px ;
+                padding: 5px 15px ;
             }
-        }
+        
         
     }
     &__item-date{
@@ -675,7 +709,7 @@ a{
         background-color: #fff;
         right: -12px;
         top: 18px;
-        z-index: 10;
+        z-index: 1;
     }
     &__item{
         margin-bottom: 30px;
@@ -723,6 +757,9 @@ a{
         }
         &-text{
             max-width: 250px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-height: 100px;
         }
 
     }
@@ -735,8 +772,6 @@ a{
         align-items: flex-start;
         margin-right: 10px;
 
-        &:hover{
-        }
     }
     &__date{
         font-size: 12px;
@@ -782,7 +817,7 @@ a{
         padding: 15px 40px;
         border: none;
         background-color:rgba(#fff, .73);
-        margin-right: 15px;
+        margin-right: 25px;
         &:nth-of-type(3){
             margin-right: 0;
         }
@@ -820,6 +855,8 @@ a{
         }
     }
     &__btn{
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.12) 0%, rgba(245,245,245,0.01) 100%);
         text-decoration: none;
         cursor: pointer;
         color:#fff;
@@ -842,6 +879,9 @@ a{
     }
 }
 .footer{
+    &__container{
+        background: rgba($color: #000000, $alpha: .4);
+    }
     background-repeat: no-repeat;
     background-size: cover;
     background-position:right 00px top;
@@ -852,7 +892,12 @@ a{
         padding: 70px 0 450px;
     }
 }
-
+.news__inner.news__inner-template.contents.current{
+    justify-content: center;
+}
+.news__item{
+    margin-right: 30px;
+}
 
 
 @import "media";
