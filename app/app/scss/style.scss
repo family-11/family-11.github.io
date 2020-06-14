@@ -113,6 +113,7 @@
         }
     }
     &__search{
+        cursor: pointer;
         margin-right: 30px;
         &-input{
             display: none;
@@ -120,6 +121,7 @@
         }
     }
     .header__search-input.active{
+        cursor: pointer;
         display: block;
     }
     &__photos-item{
@@ -176,7 +178,7 @@
         }
     }
     .slider__item-4{
-        background-position: top -108px left -136px;
+        background-position: top -115px left -136px;
         background-size: 117%;
         .slider__uptite{
             font-size: 20px;
@@ -395,11 +397,11 @@
         text-decoration: none;
         cursor: pointer;
         margin-bottom: 200px;
-        padding: 0 70px;
         background-color: #129f91;
         color:#fff;
         font-size: 15px;
-        line-height: 60px;
+        line-height: 20px;
+        padding: 25px 70px !important;
         font-weight: bold;
         border-radius: 34px;
         box-shadow: 3px 2px 8px rgba( #000000,  0.74);
@@ -688,6 +690,10 @@ a{
             text-overflow: ellipsis;
             overflow: hidden;
             max-height: 100px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
         }
         
             &-text-p{
@@ -863,8 +869,8 @@ a{
         font-size: 15px;
         line-height: 20px;
         font-weight: bold;
-        line-height: 60px;
-        padding: 0 70px;
+        line-height: 20px;
+        padding: 25px 70px;
         margin: 0 auto;
         background-color: #d97c1d;
         border-radius: 34px;
@@ -898,6 +904,41 @@ a{
 .news__item{
     margin-right: 30px;
 }
+
+
+
+html.body .bvi-body[data-bvi-size="16"] * h1, html body .bvi-body[data-bvi-size="16"] * h1 * {
+     font-size: 23px ;
+}
+html body .bvi-body[data-bvi-theme=green] * {
+    background-color: transparent !important;
+}
+html body .bvi-body[data-bvi-theme=white] * {
+    background-color: transparent !important;
+}
+html body .bvi-body[data-bvi-theme=black] * {
+    background-color: transparent !important;
+}
+html body .bvi-body[data-bvi-theme=blue] * {
+    background-color: transparent !important;
+}
+
+html body .bvi-body[data-bvi-theme=brown] * {
+    background-color: transparent !important;
+}
+.important__item-big.important__item-big-1.bvi-background-image{
+    background-color: #fff;
+}
+.slider__btn.bvi-background-image{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.form__btn.bvi-background-image{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 
 
 @import "media";
