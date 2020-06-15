@@ -992,6 +992,17 @@ html body .bvi-body[data-bvi-theme=brown] * {
         }
     }
 }
+.example{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__items{
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+}
 
 
 
