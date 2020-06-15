@@ -521,8 +521,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        max-width: 364px;
-        max-width: 31%;
+        max-width: 364px ;
         padding: 5px;
         transition: all 0.2s;
         margin-right: -15px;
@@ -828,6 +827,12 @@ a{
         margin-right: 10px;
 
     }
+    .news__item-title{
+        max-width: 264px;
+    }
+    .news__item-text{
+        max-width: 264px;
+    }
     &__date{
         font-size: 12px;
         line-height: 20px;
@@ -925,6 +930,7 @@ a{
         border: none;
         transition: all 0.5s;
         text-transform: uppercase;
+        margin-bottom: 20px;
         &:hover{
             color: #fff;
             background: #3f3e3e;
@@ -1030,7 +1036,22 @@ html body .bvi-body[data-bvi-theme=brown] * {
         margin-bottom: 50px;
     }
 }
+.submit__inner{
+    max-width: width 500px;
+    flex: 0 0 50%;
+    text-align: right;
+    background-color: rgba($color: #fff, $alpha: .7);
+    height: 100%;
+    padding: 20px 10px;
 
+
+}
+.form__submit-input{
+    flex-wrap: wrap;
+}
+.g-recaptcha{
+    max-width:295px !important;
+}
 
 
 @import "media";
