@@ -522,6 +522,7 @@
         display: flex;
         flex-direction: column;
         max-width: 364px;
+        max-width: 31%;
         padding: 5px;
         transition: all 0.2s;
         margin-right: -15px;
@@ -549,6 +550,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             max-height: 100px;
+            max-width: 354px;
         }
         &-text{
             margin-bottom: 20px;
@@ -556,6 +558,7 @@
             overflow: hidden;
             max-height: 100px;
             margin-top: 0;
+            max-width: 354px;
         }
         &-link{
             margin-bottom: 20px;
