@@ -17,22 +17,33 @@
       </path>
     </svg>
   </div>
-  <header class="header">
+  <header class="header ">
     <div class="header__container container">
       <div class="header__burger-inner">
         <div class="header__logo-inner">
           <a href="index.html" class="header__logo"><img src="img/logo.png" alt="" class="header__logo"></a>
         <a href="" class="header__text">
-          <h3 class="header__title title">
+          <h3 class="header__title ">
             Семейный портал
           </h3>
-          <p class="header__subtitle subtitle">
+          <p class="header__subtitle ">
             Республика Мордовия
           </p>
         </a>
-        <div class="header__burger-burger">
-          <span></span>
+        <div class="header__nav-inner">
+          <div href="#" class="header__eye bvi-open"  ><img src="img/eye.png" alt=""></div>
         </div>
+        <div class="header__burger-partners-inner">
+          <div class="header__burger-partners">
+            <h6 class="header__burger-partners-title">
+              Партнёры
+            </h6>
+          </div>
+          <div class="header__burger-burger">
+            <span></span>
+          </div>
+        </div>
+        
         </div>
         <div class="header__burger-hide">
           <div class="header__photos">
@@ -44,7 +55,6 @@
           <div class="header__items__inner">
             <div class="header__items">
               <div  class="header__search"><img src="img/serch.png" alt="искать"></div>
-              <a href="#" class="header__eye bvi-open"  ><img src="img/eye.png" alt=""></a>
             </div>
             <input type="text" class="header__search-input" placeholder="Искать">
           </div>
@@ -54,10 +64,10 @@
         <div class="header__logo-inner">
           <a href="index.html" class="header__logo"><img src="img/logo.png" alt="" class="header__logo"></a>
         <div class="header__text">
-          <h3 class="header__title title">
+          <h3 class="header__title ">
             Семейный портал
           </h3>
-          <p class="header__subtitle subtitle">
+          <p class="header__subtitle ">
             Республика Мордовия
           </p>
         </div>
@@ -71,13 +81,35 @@
         <div class="header__items__inner">
           <div class="header__items">
             <div  class="header__search"><img src="img/serch.png" alt="искать"></div>
-            <a href="#" class="header__eye bvi-open"  ><img src="img/eye.png" alt=""></a>
+            <div href="#" class="header__eye bvi-open"  ><img src="img/eye.png" alt=""></div>
           </div>
           <input type="text" class="header__search-input" placeholder="Искать">
         </div>
       </div>
     </div>
   </header>
+  <div class="breadcrumbs">
+    <div class="breadcrumbs__container container">
+      <ol class="breadcrumbs__inner">
+        <li class="breadcrumbs__item"><a href="./index.html"><span>Главная</span></a></li>
+        <li class="breadcrumbs__item breadcrumbs__item-last"><a href=""><span>Пример</span></a></li>
+      </ol>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="nav__container container">
+      <div class="nav__burger-burger">
+        <span></span>
+      </div>
+      <div class="nav__inner">
+        <a href="#" class="nav__item title">Родителям и детям</a>
+        <a href="#" class="nav__item title">выплаты и пособия семьям с детьми</a>
+        <a href="#" class="nav__item title">специалистам</a>
+        <a href="#" class="nav__item title">НКО</a>
+        <a href="#" class="nav__item title">задай вопрос</a>
+      </div>
+    </div>
+  </nav>
   <section class="table">
     <div class="table__container container">
       <h2 class="table__title title">
@@ -229,9 +261,11 @@
           
         </h2>
         <div class="gallery__inner">
-          <a class="gallery__box" data-fancybox="gallery__inner" href="img/important-1.jpg">
-              <img src="img/important-1.jpg" alt="" class="gallery__img">
-          </a>
+            <a class="gallery__box" data-fancybox="gallery__inner" href="img/important-1.jpg">
+              <div class="gallery__box-inner">
+                <img src="img/important-1.jpg" alt="" class="gallery__img">
+              </div>
+            </a>
           <a class="gallery__box" data-fancybox="gallery__inner" href="img/important-2.jpg">
             <img src="img/important-2.jpg" alt="" class="gallery__img">
           </a>
@@ -250,6 +284,44 @@
         </div>
       </div>
     </section>
+    <div class="example">
+      <div class="example__container container">
+        <div class="example__items">
+          <h1>Заголовок</h1>
+          <h2>Заголовок</h2>
+          <h3>Заголовок</h3>
+          <h4>Заголовок</h4>
+          <h5>Заголовок</h5>
+          <h6>Заголовок</h6>
+        </div>
+        <div class="example__items">
+          <h1>strong</h1>
+          <strong>Жирный</strong>
+        </div>
+        <div class="example__items">
+          <h1>ссылка</h1>
+          <a href="">ссылка</a>
+        </div>
+        <div class="example__items">
+          <h1 >ul </h1>
+          <ul>
+            <li>Текст</li>
+            <li>Текст</li>
+            <li>Текст</li>
+            <li>Текст</li>
+            <li>Текст</li>
+          </ul>
+        </div>
+        <div class="example__items">
+          <h1>p</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maiores facere laboriosam vel adipisci magni et quas animi consequuntur vitae ratione velit ipsam tempora, incidunt maxime quisquam facilis at nulla provident, modi temporibus quaerat aspernatur! Iusto asperiores, id, velit consequatur amet iure molestias dolorum fuga eligendi perspiciatis atque assumenda ducimus ipsam repellat quam et qui beatae esse, dolor sit magnam quibusdam. Consequuntur laboriosam dolor libero soluta cumque beatae quia similique a error? Alias laboriosam hic illo perferendis ullam, possimus quasi sed enim dicta, suscipit, culpa nihil cumque! Possimus saepe consequatur molestiae rem veniam eius laborum corrupti officiis. Modi, molestiae ab.</p>
+        </div>
+        <div class="example__items">
+          <h1>em</h1>
+          <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorum, nam expedita maxime praesentium non ea iure eius reiciendis aliquid hic, numquam in aspernatur consectetur minus voluptate exercitationem nesciunt molestiae quia vero ullam earum, sint commodi. Illum, iure voluptatum explicabo facilis, natus nihil non, veniam dicta est hic similique dolores et suscipit aliquam ad dolore fugiat ea consectetur! Labore totam quasi, libero velit error doloribus accusamus reprehenderit natus eum earum ullam, nostrum unde laudantium, neque soluta modi sed ducimus quisquam magnam dolores beatae expedita hic eligendi sapiente. Qui modi, dignissimos autem ex voluptatibus eos harum amet quis explicabo temporibus vitae!</em>
+        </div>
+      </div>
+    </div>
 
 
     <footer class="footer" style="background-image: url(img/footer-img.jpg);">
