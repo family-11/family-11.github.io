@@ -2,7 +2,7 @@ $(function(){
 
     $('.slider__container').slick({
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 7000,
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -47,15 +47,12 @@ $(function(){
         });
        $('.header__search').click(function(event){
         $('.header__search-input').toggleClass('active');
+        
+        $('.header__logo-inner').toggleClass('active');
         });
 
 
-        $('.slick-next,.slick-arrow').click(function(event){
-          wow.init();
-          });
-          $('.slick-next,.slick-arrow').click(function(event){
-            wow.init();
-          });
+        
           
           
           function check(){

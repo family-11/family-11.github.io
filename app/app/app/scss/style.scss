@@ -6,6 +6,17 @@
 @import "template";
 
 
+.slider__text{
+    opacity: 0 !important;
+    transition: 3.5s all;
+}
+
+.slick-active .slider__text {
+    opacity: 1 !important;
+    transition: 3.5s all;
+}
+
+
 
 .loader_bg{
     position: fixed;
@@ -911,7 +922,7 @@ a{
         border: none;
         transition: all 0.5s;
         text-transform: uppercase;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         &:hover{
             color: #fff;
             background: #3f3e3e;
@@ -1028,7 +1039,9 @@ html body .bvi-body[data-bvi-theme=brown] * {
 }
 .form__submit-input{
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
+
 .g-recaptcha{
     max-width:295px !important;
 }
