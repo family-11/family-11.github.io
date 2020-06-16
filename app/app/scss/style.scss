@@ -6,28 +6,95 @@
 @import "template";
 
 
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background:#fff;
+    width: 100%;
+    height: 100%;
+
+}
+.loader{
+    border: 0 solid transparent;
+    border-radius:50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader::before, .loader:after{
+    content: '';
+    border:1em solid #ff5733;
+    border-radius:50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+
+}
+.loader::before{
+    animation-delay:0.5s;
+
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
 .preloader {
+    /*фиксированное позиционирование*/
     position: fixed;
+    /* координаты положения */
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    overflow: hidden;
-    /* фоновый цвет */
+    /* фоновый цвет элемента */
     background: #e0e0e0;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
     z-index: 1001;
   }
   
-  .preloader__image {
+  .preloader__row {
     position: relative;
     top: 50%;
     left: 50%;
-    width: 70px;
-    height: 70px;
+    width: 70px !important;
+    height: 70px !important;
     margin-top: -35px;
     margin-left: -35px;
     text-align: center;
     animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #337ab7;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
   }
   
   @keyframes preloader-rotate {
@@ -36,45 +103,26 @@
     }
   }
   
-
-  .preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    /* фоновый цвет */
-    background: #e0e0e0;
-    z-index: 1001;
-  }
-
-  .preloader__image {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 70px;
-    height: 70px;
-    margin-top: -35px;
-    margin-left: -35px;
-    text-align: center;
-    animation: preloader-rotate 2s infinite linear;
-  }
-  @keyframes preloader-rotate {
+  @keyframes preloader-bounce {
+  
+    0%,
     100% {
-      transform: rotate(360deg);
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
     }
   }
-
+  
   .loaded_hiding .preloader {
     transition: 0.3s opacity;
     opacity: 0;
   }
-
+  
   .loaded .preloader {
     display: none;
   }
-
 .header{
     &__inner{
         display: flex;
@@ -447,14 +495,13 @@
         padding: 25px 70px !important;
         font-weight: bold;
         border-radius: 34px;
-        box-shadow: 3px 2px 8px rgba( #000000,  0.74);
         border: none;
-        transition: all 0.2s;
+        transition: all 0.5s;
         text-transform: uppercase;
         &:hover{
-            color: #fff;
-            background-color: #3f3e3e;
-            transition: all 0.2s;
+            color:#fff;
+            background: #3f3e3e;
+            transition: all 0.5s;
         }
     }
           
@@ -523,7 +570,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        max-width: 364px;
+        max-width: 364px ;
         padding: 5px;
         transition: all 0.2s;
         margin-right: -15px;
@@ -551,6 +598,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             max-height: 100px;
+            max-width: 354px;
         }
         &-text{
             margin-bottom: 20px;
@@ -558,6 +606,7 @@
             overflow: hidden;
             max-height: 100px;
             margin-top: 0;
+            max-width: 354px;
         }
         &-link{
             margin-bottom: 20px;
@@ -708,8 +757,8 @@ a{
 
     }
     &__item-big{
-        margin-bottom: 30px;
-        height: 393px;
+        margin-bottom: 23px;
+        height: 406px;
         width: 520px;
         padding:20px 30px 60px ;
         position: relative;
@@ -827,6 +876,12 @@ a{
         margin-right: 10px;
 
     }
+    .news__item-title{
+        max-width: 264px;
+    }
+    .news__item-text{
+        max-width: 264px;
+    }
     &__date{
         font-size: 12px;
         line-height: 20px;
@@ -841,6 +896,11 @@ a{
     display: flex;
     flex-direction: column;
     align-items:center;
+    &__submit-input{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     &__form{
         width: 100%;
         display: flex;
@@ -876,18 +936,12 @@ a{
             margin-right: 0;
         }
         &::-webkit-input-placeholder{
-            font-family: lora;
-            font-weight: blod;
             font-size: 15px;
             line-height: 60px;
-            color: #353535;
         }
         &::-ms-input-placeholder {
-            font-family: lora;
-            font-weight: blod;
             font-size: 15px;
             line-height: 60px;
-            color: #353535;
         }
 
         &-big{
@@ -923,12 +977,13 @@ a{
         border-radius: 34px;
         box-shadow: 3px 2px 8px rgba( #000000,  0.74);
         border: none;
-        transition: all 0.2s;
+        transition: all 0.5s;
         text-transform: uppercase;
+        margin-bottom: 20px;
         &:hover{
             color: #fff;
-            background-color: #3f3e3e;
-            transition: all 0.2s;
+            background: #3f3e3e;
+            transition: all 0.5s;
         }
     }
 }
@@ -990,6 +1045,7 @@ html body .bvi-body[data-bvi-theme=brown] * {
     &__inner{
         display: flex;
         list-style: none;
+        padding: 0;
     }
     &__item{
         margin-right: 20px;
@@ -1005,6 +1061,13 @@ html body .bvi-body[data-bvi-theme=brown] * {
             position: absolute;
         }
         &-last{
+            a{
+                text-decoration: none;
+            }
+           span{
+            color: #ababab;
+            
+           }
             &::after{
                 content: '';
             }
@@ -1022,7 +1085,21 @@ html body .bvi-body[data-bvi-theme=brown] * {
         margin-bottom: 50px;
     }
 }
+.submit__inner{
+    flex: 0 0 50%;
+    text-align: center;
+    background-color: rgba($color: #fff, $alpha: .7);
+    height: 100%;
+    padding: 20px 10px;
 
+
+}
+.form__submit-input{
+    flex-wrap: wrap;
+}
+.g-recaptcha{
+    max-width:295px !important;
+}
 
 
 @import "media";

@@ -1,15 +1,18 @@
 $(function(){
 
     $('.slider__container').slick({
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 900,
-        infinite:false,
         fade:true
       });
+
+      /*window.onload = function () {
+        document.body.classList.add('loaded');
+      }
       window.onload = function () {
         document.body.classList.add('loaded_hiding');
         window.setTimeout(function () {
@@ -17,13 +20,10 @@ $(function(){
           document.body.classList.remove('loaded_hiding');
         }, 500);
       }
-      
-
-
-
-
-
-     
+      */
+      setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+      }, 1000);
 
 
 
@@ -49,6 +49,25 @@ $(function(){
         $('.header__search-input').toggleClass('active');
         });
 
-        
+
+        $('.slick-next,.slick-arrow').click(function(event){
+          wow.init();
+          });
+          $('.slick-next,.slick-arrow').click(function(event){
+            wow.init();
+          });
+          
+          
+          function check(){
+          var submit = document.getElementsByName('submit')[0];
+          if (document.getElementById('politics').checked)
+          submit.disabled = '';
+          else
+          submit.disabled = 'disabled';
+          }
+          check();
+          
+          
+          
     
 });
