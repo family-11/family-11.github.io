@@ -68,6 +68,6 @@ $(function(){
 
           
           
-          
+            new WOW().init()
     
 });
