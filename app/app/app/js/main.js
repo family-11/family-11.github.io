@@ -10,7 +10,7 @@ $(function(){
         fade:true
       });
 
-      window.onload = function () {
+      /*window.onload = function () {
         document.body.classList.add('loaded');
       }
       window.onload = function () {
@@ -20,6 +20,12 @@ $(function(){
           document.body.classList.remove('loaded_hiding');
         }, 500);
       }
+      */
+      setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+      }, 1000);
+
+
 
 
       $("#tab").pagination({
@@ -59,6 +65,9 @@ $(function(){
           else
           submit.disabled = 'disabled';
           }
-          check();       
+          check();
+          
+          
+          
     
 });
