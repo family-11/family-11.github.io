@@ -582,9 +582,9 @@
             transition: all 0.2s;
             box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.55);
             background-color: #fff;
-            border-radius: 17px;
+            
             .news__item-img{
-                border-radius: 17px;
+                
             }
             .news__item-title{
                 color:#d16a19 ;
@@ -964,6 +964,7 @@ a{
             max-width: 100%;
             flex:0 0 99.6%;
             margin-bottom: 30px;
+            padding-top: 16px;
             height: 100px;
             position: relative;
             resize: none;
@@ -1029,11 +1030,12 @@ a{
     background-size: cover;
     background-position:center;
     &__descr{
+        
         font-size: 21px;
         margin: 0;
         color: #fff;
         text-align: center;
-        padding: 70px 0 450px;
+        padding: 70px 10px 450px;
     }
 }
 .news__inner.news__inner-template.contents.current{
