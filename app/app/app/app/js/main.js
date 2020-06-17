@@ -50,6 +50,9 @@ $(function(){
         
         $('.header__logo-inner').toggleClass('active');
         });
+        $('.nav__burger-burger-1').click(function(event){
+          $('.header__photos-1').toggleClass('active');
+          });
 
 
         
