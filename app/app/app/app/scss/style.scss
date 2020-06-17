@@ -573,6 +573,7 @@
         padding: 5px;
         transition: all 0.2s;
         margin-right: -15px;
+        padding: 10px;
         
         &:nth-last-child(){
             margin-right: -15px;
@@ -593,6 +594,9 @@
         &-img{
             margin-bottom: 20px;
             transition: all 0.2s;    
+            display: block;
+	        max-width: 100%;
+	        height: auto;
             
         }
 
@@ -885,9 +889,15 @@ a{
 .info{
     padding-bottom: 100px;
     background-color: #ecebe8;
+    .news__item-img{
+        display: block;
+	    max-width: 100%;
+	    height: auto;
+    }
     .news__item{
         align-items: flex-start;
         margin-right: 10px;
+        padding: 10px;
 
     }
     .news__item-title{
@@ -964,7 +974,7 @@ a{
             max-width: 100%;
             flex:0 0 99.6%;
             margin-bottom: 30px;
-            padding-top: 16px;
+            padding-top: 24px;
             height: 100px;
             position: relative;
             resize: none;
