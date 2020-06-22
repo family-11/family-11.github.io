@@ -29,8 +29,14 @@
     &__logo{
     padding-right: 10%;
     display: block;
+    display: block;
+	max-width: 100%;
+	height: auto;
     img{
         display: block;
+        display: block;
+	    max-width: 100%;
+	    height: auto;
     }
     }
     &__nav{
@@ -102,6 +108,7 @@
             border-radius: 50%;
             background-color: #fff;
             position: relative;
+            cursor: pointer;
             &:hover{
                 background-color:#F7ACA9;
                 transition: all 0.3s;
@@ -174,6 +181,8 @@
         font-size: 22px;
         white-space: nowrap;
         cursor: pointer;
+        outline: none;
+        transition: all 0.3s ;
         &:hover{
             background-color: #FBD1D0;
             color:#FB827D ;
@@ -193,6 +202,11 @@
         font-size: 26px;
         line-height: 33px;
         margin-bottom: 33px;
+        transition: all 0.2s;
+        &:hover{
+            color: #F7ACA9;
+            transition: all 0.2s;
+        }
     }
     &__social-phone{
         display: none;
@@ -231,6 +245,9 @@
     &__img{
         width: 100%;
         flex :0 0 50%;
+        display: block;
+	    max-width: 100%;
+	    height: auto;
     }
 
 }
@@ -241,7 +258,7 @@
     background-position:center;
     &__inner{
         padding-top: 200px;
-        background-image: url(../img/TheLastOne.png);
+        background-image: url(../img/TheLastOn.png);
         background-repeat: no-repeat;
         background-position:right top;
         padding-bottom: 100px;
@@ -262,6 +279,7 @@
         text-align: center;
         max-width:840px ;
         margin: 0 auto;
+        
     }
     &__item{
         height: 334px;
@@ -300,6 +318,9 @@
         border:none;
         width: 100%;
         cursor: pointer;
+        transition: all 0.3s ;
+        outline: none;
+
         &:hover{
             background-color: #fff;
             color:#FB827D ;
@@ -308,13 +329,15 @@
     }
     &__btn-big{
         display: none;
+        outline: none;
+        transition: all 0.3s ;
     }
     .slick-dots{
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 27px 0 67px;
-
+        outline: none;
         .slick-active{
             button{
                 background-image: url(../img/Ellipse5.svg);
@@ -327,6 +350,7 @@
                 opacity: 1;
                 border-radius:50%;
                 border: 2px solid #FB827D;
+                outline: none;
             }
         }
         button{
@@ -338,6 +362,7 @@
             border-radius: 50%;
             margin:0 19px ;
             background-color: #fff;
+            outline: none;
             &:last-child{
                 margin-right: 0;
             }
@@ -357,6 +382,7 @@
         right: -71px;
         top: 133px;
         cursor: pointer;
+        outline: none;
     }
     .slick-arrow.slick-prev{
         border:none;
@@ -365,6 +391,7 @@
         left: -71px;
         top: 133px;
         cursor: pointer;
+        outline: none;
     }
     .slick-slider{
         position: relative;
@@ -423,11 +450,17 @@
         margin-right: 38px;
         top: -97px;
         right: 209px;
+        display: block;
+	max-width: 100%;
+	height: auto;
     }
     &__img-2{
         position: absolute;
         top: 44px;
         right: -39px;
+        display: block;
+	    max-width: 100%;
+	    height: auto;
     }
 }
 .footer{
@@ -488,7 +521,13 @@
         font-size: 30px;
         line-height: 39px; 
         color: #454D5B;
+        transition: all 0.2s;
+        &:hover{
+            color: #F7ACA9;
+            transition: all 0.2s;
+        }
     }
+
     &__social{
         text-align: center;
         span{
@@ -583,6 +622,8 @@ body.none{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: space-between;
+        min-height: 136px;
     }
     &__item-prices{
         display: flex;
@@ -643,6 +684,9 @@ body.none{
         margin-right: 30px;
         border: 2px solid #FB827D;
         border-radius:34px;
+        display: block;
+	    max-width: 100%;
+	    height: auto;
     }
     &__inputs{
         flex-wrap: wrap;
@@ -781,6 +825,8 @@ body.none{
         margin: 0 auto;
         border: none;
         cursor: pointer;
+        outline: none;
+        transition: all 0.3s ;
         &-inner{
             display: flex;
         }
@@ -825,7 +871,7 @@ body.none{
     display: block;
     padding: 0;
     margin: 0;
-    padding-left: 20px;
+    padding-left: 10px;
     border:none;
     font-family: Quicksand;
     font-size: 28px;
