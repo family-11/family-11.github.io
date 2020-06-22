@@ -274,7 +274,7 @@
             height: 261px;
             display: block;
 	        max-width: 100%;
-	        height: auto;
+            height: auto; 
         }
         &-descr{
             display: flex;
@@ -438,6 +438,11 @@
     &__item{
         display: flex;
         flex-direction: column;
+        &__img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
         &-descr{
             display: flex;
             justify-content: center;
