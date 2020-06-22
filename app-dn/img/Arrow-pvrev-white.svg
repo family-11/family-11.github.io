@@ -1,0 +1,10 @@
+<svg id="Arrow-pvrev-white" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="Ellipse_4" data-name="Ellipse 4" fill="none" stroke="#f17d78" stroke-width="2">
+    <circle cx="22" cy="22" r="22" stroke="none"/>
+    <circle cx="22" cy="22" r="21" fill="none"/>
+  </g>
+  <g id="ArrowRaw" transform="translate(17.458 13.665)">
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="11.483" height="1.044" rx="0.522" transform="translate(8.858 0.738) rotate(135)" fill="#f17d78"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="11.483" height="1.044" rx="0.522" transform="translate(8.12 16.227) rotate(-135)" fill="#f17d78"/>
+  </g>
+</svg>

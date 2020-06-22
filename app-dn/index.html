@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="cart">
+    <div class="cart-container">
+    <div class="cart__head">
+      <div class="cart__non">'</div>
+      <div class="cart__title">Shopping bag</div>
+      <div class="cart__exit"><img src="img/Group 9.svg" alt=""></div>
+    </div>
+    <div class="cart__items">
+      <div class="cart__item">
+        <div class="cart__box-img"><img src="img/cart-1.png" alt="" class="cart__img"></div>
+        <div class="cart__item__inner">
+          <div class="cart__item-title">
+            Chocolate
+            classic
+          </div>
+          <div class="cart__item-prices">
+            <div class="cart__price">
+              <div class="quantity">
+                <input class="don1" type="number" min="0" max="100" step="7" value="0" class="quantity-num">
+                <span>$</span>
+              </div>
+            </div>
+            <div class="cart__counter">
+              <button class="cart__plus" data-direction="minus">-</button>
+              <input class="cart__num cart__num1" value="0" type="number" data-cost1="1">
+              <button class="cart__plus" data-direction="plus">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart__item">
+        <div class="cart__box-img"><img src="img/ddf.png" alt="" class="cart__img"></div>
+        <div class="cart__item__inner">
+          <div class="cart__item-title">
+            Strawberry
+          </div>
+          <div class="cart__item-prices">
+            <div class="cart__price">
+              <div class="quantity1">
+                <input  class="don2" type="number" min="0" max="100" step="5" value="0">
+                <span>$</span>
+              </div>
+            </div>
+            <div class="cart__counter">
+              <div class="cart__plus" data-direction="minus">-</div>
+              <input class="cart__num cart__num2" value="0" type="text">
+              <div class="cart__plus" data-direction="plus">+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart__item">
+        <div class="cart__box-img"><img src="img/s1200.png" alt="" class="cart__img"></div>
+        <div class="cart__item__inner">
+          <div class="cart__item-title">
+            Coffee
+            classic
+          </div>
+          <div class="cart__item-prices">
+            <div class="cart__price">
+              <div class="quantity2">
+                <input class="don3" type="number" min="0" max="100" step="5" value="0">
+                <span>$</span>
+              </div>
+            </div>
+            <div class="cart__counter">
+              <button class="cart__plus" data-direction="minus">-</button>
+              <input class="cart__num cart__num3" value="0" type="text">
+              <button class="cart__plus" data-direction="plus">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart__inputs">
+      <input type="text" class="cart__input" placeholder="name">
+      <input type="text" class="cart__input" placeholder="E-mail">
+      <input type="text" class="cart__input" placeholder="Phone">
+      <input type="text" class="cart__input" placeholder="Code">
+    </div>
+    <div class="cart__radio">
+      <div class="cart__radio-inner">
+        <div class="cart__radio-title">Delivery</div>
+        <label  class="radio-label">
+          <input type="radio" class="cart__radio__choose "  name="del">
+          <span class="cart__radio-fake"></span>
+          <span>Pickup</span> 
+        </label>
+        <label  class="radio-label">
+          <input type="radio" class="cart__radio__choose"  name="del">
+          <span class="cart__radio-fake"></span>
+          <span>Counter</span> 
+        </label>
+      </div>
+      <div class="cart__radio-inner">
+        <div class="cart__radio-title">Payment</div>
+        <label  class="radio-label">
+          <input type="radio" class="cart__radio__choose"  name="pay">
+          <span class="cart__radio-fake"></span>
+          <span class="radio-text">Cash</span> 
+        </label>
+        <label  class="radio-label">
+          <input type="radio" class="cart__radio__choose" name="pay">
+          <span class="cart__radio-fake"></span>
+          <span>Online</span> 
+        </label>
+      </div>
+    </div>
+    <input type="text" class="cart__input cart__input-name" placeholder="name">
+    <div class="cart__total">
+    <div class="cart__total-price">Total <span class="cart__total-price-num summ" data-cost1="1" data-cost2="1" data-cost3="1"></span></div>
+    </div>
+    <div class="cart__btn-inner">
+      <button class="cart__btn">next</button>
+    </div>
+  </div>
+  </div>
+<div class="header-bg">
+  <header class="header">
+    <div class="header__burger-inner">
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <img src="img/Logo-white.svg" alt="logo" class="header__burger-logo">
+      <div class="header-burger-links">
+        <a class="header__burger-phone"><span><i class="fas fa-phone-alt"></i></span></a>
+        <div class="header__burger-cart"><span><i class="fas fa-shopping-cart"></i></span></div>
+      </div>
+    </div>
+    <div class="header__inner">
+      <div class="header__logo-nav-inner">
+        <div class="header__logo"><img src="img/Logo.svg" alt=""></div>
+        <div class="header__nav">
+          <a href="" class="header__nav-links">Menu</a>
+          <a href="" class="header__nav-links">Location</a>
+          <a href="" class="header__nav-links">About us</a>
+          <a href="" class="header__nav-links">Delivery </a>
+        </div>
+      </div>
+      <div class="header__orders">
+        <a href="tel:8 800 925-57-89" class="header__orders-phone"><span class="header__orders-phone-span" ><i class="fas fa-phone"></i></span>8 800 925-57-89</a>
+        <a href="" class="header__orders-req">Request a call </a>
+        <div href="" class="header__orders-cart"><span class="header__orders-cart-span"><i class="fas fa-shopping-cart"></i></span></div>
+      </div>
+    </div>
+  </header>
+  <section class="head">
+    <div class="head__social">
+      <a href="" class="head__social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="head__social-link">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="head__social-link">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <div class="container">
+      <div class="head__inner">
+        <div class="head__title title">Donuts  </div>
+        <div class="head__text">
+          Original american 
+          stuffed donuts!
+        </div>
+        <div class="head__subtext">
+          Every shape, any size and irresistibly delicious—
+          each bite will brighten your day.
+        </div>
+        <div class="head__btn">Go to menu</div>
+        <div class="head__social-phone">
+          <a href="" class="head__social-link  head__social-link-phone">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="head__social-link head__social-link-phone">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="head__social-link head__social-link-phone">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  <section class="features">
+    <div class="container">
+      <div class="features__title title">Features</div>
+      <div class="features__inner">
+        <div class="features__items">
+          <div class="features__item">
+            <div class="features__info">
+              <div class="features__info-title">
+                Beautiful and Unique
+              </div>
+              <div class="features__info-text">
+                Enjoy the beauty and taste of your favorite donut. 
+                feel the uniqueness of <span>Don Don</span>
+              </div>
+            </div>
+            <img  class="features__img" src="img/features-1.jpg" alt="">
+          </div>
+          <div class="features__item">
+            <img  class="features__img features__img-2" src="img/features-2.jpg" alt="">
+            <div class="features__info features__info-2">
+              <div class="features__info-title">
+                Large Assortment
+              </div>
+              <div class="features__info-text">
+                Choose from 15 types of mold and 12 types of sprinkles
+              </div>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__info">
+              <div class="features__info-title">
+                Fast Delivery
+              </div>
+              <div class="features__info-text">
+                Our couriers will deliver the order as soon 
+                as possible to any place
+              </div>
+            </div>
+            <img  class="features__img" src="img/features-3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider">
+    <div class="container">
+      <img class="slider__arrow1" href="">
+      <img class="slider__arrow2" href="">
+      <div class="slider__inner">
+        <div class="slider__texts-inner">
+          <div class="slider__title title">Fill your donut box!</div>
+          <div class="slider__text">
+            You can choose any donut - we will pack
+            and deliver to you   
+          </div>
+        </div>
+        <div class="slider__items">
+          <div class="slider__item" style="background-image: url(img/Thesecond.png);">
+            <div class="slider__type">Strawberry</div>
+            <div class="slider__price">5$</div>
+            <button class="slider__btn">Add to box</button>
+          </div>
+          <div class="slider__item" style="background-image: url(img/Thefourth.png);">
+            <div class="slider__type">Chocolate</div>
+            <div class="slider__price">7$</div>
+            <button class="slider__btn">Add to box</button>
+          </div>
+          <div class="slider__item" style="background-image: url(img/TheSeventh.png);">
+            <div class="slider__type">Rainbow</div>
+            <div class="slider__price">5$</div>
+            <button class="slider__btn">Add to box</button>
+          </div>
+          <div class="slider__item" style="background-image: url(img/Thesecond.png);">
+            <div class="slider__type">Strawberry</div>
+            <div class="slider__price">5$</div>
+            <button class="slider__btn">Add to box</button>
+          </div>
+          <div class="slider__item" style="background-image: url(img/Thefourth.png);">
+            <div class="slider__type">Chocolate</div>
+            <div class="slider__price">7$</div>
+            <button class="slider__btn">Add to box</button>
+          </div>
+          <div class="slider__item" style="background-image: url(img/TheSeventh.png);">
+            <div class="slider__type">Rainbow</div>
+            <div class="slider__price">5$</div>
+            <button class="slider__btn">Add to box</button>
+          </div>
+        </div>
+        <div class="slider__btn-big">Buy now</div>
+      </div>
+    </div>
+  </section>
+  <section class="history">
+    <div class="container">
+      <div class="history__title title">Company History</div>
+      <div class="history__inner">
+        <div class="history__texts">
+          <div class="history__text"><span>Don Don </span>then we make donuts from natural ingredients using
+            the original American technology, without the use of freezing.
+            </div>
+          <div class="history__subtext">
+            Donuts are not just an excellent dessert, but also a worthy
+            treat that can be used as a gift.
+          </div>
+          <div class="history__ad">Feel the taste of real American doughnuts!</div>
+        </div>
+        <div class="history__images">
+          <img src="img/history-1.png" alt="" class="history__img-1">
+          <img src="img/history-2.png" alt="" class="history__img-2">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer__photo">
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <img class="footer__logo" src="img/Logo.svg" alt="logo">
+        <div class="footer__nav">
+          <a href="" class="footer__links-1">Menu</a>
+          <a href="" class="footer__links-1">Location</a>
+          <a href="" class="footer__links-1">About us</a>
+          <a href="" class="footer__links-1">Delivery </a>
+        </div>
+        <div class="footer__nav">
+          <a href="" class="footer__links-2">Contact us</a>
+          <a href="" class="footer__links-2">Privacy</a>
+          <a href="" class="footer__links-2">Help</a>
+          <a href="" class="footer__links-2">FAQ</a>
+        </div>
+        <div class="footer__contacts">
+          <a href="tel:8 800 925-57-89" class="footer__phone"><span></span>8 800 925-57-89</a>
+          <div class="footer__address"><span></span>Tsvetnoy Blvd, 5, Moscow</div>
+          <a href="mailto: Dondon@gmail.com" class="footer__mail"><span></span> Dondon@gmail.com</a>
+          <div class="footer__social">
+            <span><a href="" class="footer__social-link">
+              <i class="fab fa-instagram"></i>
+            </a></span>
+            <span><a href="" class="footer__social-link">
+              <i class="fab fa-facebook-f"></i>
+            </a></span>
+            <span><a href="" class="footer__social-link">
+              <i class="fab fa-twitter"></i>
+            </a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__privacy">Privacy Policy | Terms of Use | Accessibility</div>
+  </footer>
+  </div>
+  
+
+
+
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

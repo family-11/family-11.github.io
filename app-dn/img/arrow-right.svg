@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+  <g id="Arrow" transform="translate(-1475 -2719)">
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="27.5" cy="27.5" r="27.5" transform="translate(1475 2719)" fill="#fb827d"/>
+    <g id="ArrowRaw" transform="translate(1.486 19.779)">
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="14.286" height="1.299" rx="0.649" transform="translate(1496.433 2716.221) rotate(45)" fill="#fff"/>
+      <rect id="Rectangle_8" data-name="Rectangle 8" width="14.286" height="1.299" rx="0.649" transform="translate(1495.515 2735.49) rotate(-45)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
