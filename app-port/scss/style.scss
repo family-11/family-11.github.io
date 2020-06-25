@@ -98,7 +98,7 @@ h1,h2,h3,h4,h5,h6,p{
             color: #828286;
             margin-right: 25px;
             transition: all 0.2s;
-            &:nth-last-child(){
+            &:nth-last-child(1){
                 margin-right: 0;
             }
             &:hover{
