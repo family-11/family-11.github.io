@@ -195,6 +195,7 @@
         position: absolute;
         top: 34%;
         left: 0;
+        z-index: 1;
     }
     &__social-link{
         color: #454D5B;
@@ -247,7 +248,8 @@
         flex :0 0 50%;
         display: block;
 	    max-width: 100%;
-	    height: auto;
+        height: auto;
+        border-radius:76px;
     }
 
 }
@@ -450,11 +452,17 @@
         margin-right: 38px;
         top: -97px;
         right: 209px;
+        border-radius:74px;
+        max-height: 570px;
+        max-width: 233px;
     }
     &__img-2{
         position: absolute;
         top: 44px;
         right: -39px;
+        border-radius:74px;
+        max-height: 570px;
+        max-width: 233px;
     }
 }
 .footer{
@@ -739,6 +747,7 @@ body.none{
         align-items: center;
         position: relative;
         margin-bottom: 20px;
+        margin-left: 15px;
     }
     &__radio-fake{
         position: absolute;

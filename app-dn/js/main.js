@@ -27,8 +27,8 @@ $(function(){
               {
                 breakpoint: 480,
                 settings: {
-                  nextArrow:'<button type="button" class = "slick-arrow slick-next"><img src="img/arrow-next-white.svg" alt="next"></button>',
-            prevArrow:'<button type="button" class = "slick-arrow slick-prev"><img src="img/arrow-pvrev-white.svg" alt="back"></button>',
+                  nextArrow:'<button type="button" class = "slick-arrow slick-next"><img src="img/Arrow-next-white.svg" alt="next"></button>',
+                  prevArrow:'<button type="button" class = "slick-arrow slick-prev"><img src="img/Arrow-pvrev-white.svg" alt="back"></button>',
                   slidesToShow: 1,
                   slidesToScroll: 1
                 }
