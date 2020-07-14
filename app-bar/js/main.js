@@ -41,12 +41,26 @@ $(function(){
         $('.img-arr').attr('src','ggg');
       });
       */
-     $('.slider__item').on('click',function(){
-        $(this).toggleClass('active');
-      
+     const sliderItem = document.querySelectorAll(".slider__item-prices-about");
+     sliderItem.forEach((el) => {
+       el.addEventListener("click", function () {
+         const come = this.parentElement.parentElement.parentElement.querySelectorAll(
+           ".slider__item-hide"
+         );
+         console.log(come[0]);
+         come[0].classList.add("active");
+       });
      });
-     $('.slider__item-hide').on('click',function(){
-        $(this).toggleClass('active');
+   
+     const sliderclose = document.querySelectorAll(".close");
+     sliderclose.forEach((elem) => {
+       elem.addEventListener("click", function () {
+         const gone = this.parentElement.parentElement.parentElement.getElementsByClassName(
+           "slider__item-hide"
+         );
+         console.log(gone[0]);
+         gone[0].classList.remove("active");
+       });
      });
 
      $('.burger__burger').click(function(event){
@@ -71,20 +85,21 @@ $(function(){
                 '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
             ),
     
-            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            myPlacemark = new ymaps.Placemark([55.769515, 37.592497], {
                 hintContent: 'Собственный значок метки',
                 balloonContent: 'Это красивая метка'
             }, {
                 // Опции.
                 // Необходимо указать данный тип макета.
-                iconLayout: 'default#image',
+                iconLayout: 'default#imageWithContent',
                 // Своё изображение иконки метки.
-                iconImageHref: 'images/myIcon.gif',
+                iconImageHref: '../img/poi.svg',
                 // Размеры метки.
-                iconImageSize: [30, 42],
+                iconImageSize: [48, 48],
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
-                iconImageOffset: [-15, -42]
+                iconContentOffset: [15, 15],
+                iconContentLayout: MyIconContentLayout
             }),
     
             myPlacemarkWithContent = new ymaps.Placemark([55.769515, 37.592497], {
